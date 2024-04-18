@@ -8,7 +8,7 @@ pipeline {
         IMAGE_TAG = "latest"
         DOCKERHUB_PASSWORD = "${DOCKERHUB_PASSWORD_PSW}"
         RENDER_API_TOKEN = credentials('RENDER_API_TOKEN')
-        RENDER_SERVICE_ID = "srv-cockhsa1hbls73csl2o0"
+        RENDER_SERVICE_ID = "srv-coghfp6v3ddc73edhplg"
         RENDER_DEPLOY_HOOK_URL_TP3 = credentials('RENDER_DEPLOY_HOOK_URL_TP3')
     }
 
