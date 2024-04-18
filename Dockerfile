@@ -20,5 +20,5 @@ COPY . .
 EXPOSE 5000
 
 # Définir la commande pour lancer l'application avec Gunicorn
-# Remplacez 'app:app' par 'nom_du_module:instance_flask' si différent
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
+# Utilisez 'main:app' si votre application Flask est nommée 'app' dans 'main.py'
+CMD ["gunicorn", "--workers=3", "--bind", "0.0.0.0:5000", "main:app"]
