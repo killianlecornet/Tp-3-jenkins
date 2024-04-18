@@ -4,7 +4,7 @@ pipeline {
     environment {
         // Variables d'environnement nécessaires
         ID_DOCKER = "${ID_DOCKER_PARAMS}"
-        IMAGE_NAME = "jk-golang"
+        IMAGE_NAME = "jk-flask"
         IMAGE_TAG = "latest"
         DOCKERHUB_PASSWORD = "${DOCKERHUB_PASSWORD_PSW}"
         RENDER_API_TOKEN = credentials('RENDER_API_TOKEN')
